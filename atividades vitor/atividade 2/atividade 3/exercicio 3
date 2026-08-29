@@ -1,1 +1,148 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizonte Tech</title>
+</head>
+<body>
+    <header>
+        <h1>Horizonte Tech</h1>
+        <p>Conhecimento, tecnologia e inovação transformando o futuro.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Institucional</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#">Oportunidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <!--institucional-->
+            <section>
+                <h2>Tecnologia que transforma</h2>
+                <p>A Faculdade Horizonte desenvolve cursos e projetos voltados para formação de profissionais preparados para os desafios da transformação digital.</p>
+                <p>O portal Horizonte Tech reúne informações sobre cursos, projetos acadêmicos, eventos, oportunidades e tendências relacionadas ao mercado de tecnologia.</p>
+                <img src="faculdade.webp" alt="horizonte tech" width="500">
+            </section>
+            <!--cursos-->
+            <section id="cursos">
+                <h2>Cursos da Área de Tecnologia</h2>
+                <p><strong>Curso 1 - Análise e Desenvolvimento de Sistemas:</strong> Formação voltada para análise, desenvolvimento e manutenção de sistemas computacionais.</p>
+                <p><strong>Curso 2 - Ciência da Computação:</strong> Formação abrangente relacionada à computação, algoritmos, desenvolvimento de software e tecnologias computacionais.</p>
+                <p><strong>Curso 3 - Redes de Computadores:</strong> Formação voltada para infraestrutura, comunicação de dados e administração de ambientes computacionais.</p>
+                <p><strong>Curso 4 - Sistemas de Informação:</strong> Formação destinada ao desenvolvimento e utilização estratégica de sistemas de informação nas organizações.</p>
+            </section>
+            <!--noticias-->
+            <section id="noticias">
+                <h2>Últimas Notícias</h2>
+                <article>
+                    <h3>Notícia 1 - Inteligência Artificial ganha espaço nas empresas: Organizações de diferentes setores estão utilizando soluções baseadas em Inteligência Artificial para apoiar atividades, automatizar processos e analisar informações.</h3>
+                    <img src="ia.webp" alt="noticia1_ia" width="500"><br>
+                    <a href="https://www.google.com">continuar leitura</a>
+                </article>
+                <article>
+                    <h3>Notícia 2 - Desenvolvimento Web continua crescendo: Aplicações web continuam sendo utilizadas por organizações para disponibilização de produtos, serviços e sistemas digitais.</h3>
+                    <img src="web.jpg" alt="noticia2_web" width="500"><br>
+                    <a href="https://www.google.com">continuar leitura</a>
+                </article>
+                <article>
+                    <h3>Notícia 3 - Segurança digital torna-se prioridade: A proteção de dados e sistemas tornou-se uma preocupação importante para organizações que dependem cada vez mais de ambientes digitais.</h3>
+                    <img src="segurança.webp" alt="noticia3_segurança" width="500"><br>
+                    <a href="https://www.google.com">continuar leitura</a>
+                </article>
+                <article>
+                    <h3>Notícia 4 - Mercado busca novos profissionais de tecnologia: Empresas continuam buscando profissionais preparados para trabalhar com desenvolvimento, dados, infraestrutura e segurança.</h3>
+                    <img src="tecnologia.webp" alt="noticia4_tecnologia" width="500"><br>
+                    <a href="https://www.google.com">continuar leitura</a>
+                </article>
+            </section>
+            <!--Tecnologias estudadas-->
+            <section>
+                <h2>Tecnologias importantes para iniciar na área</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Banco de Dados</li>
+                </ul>
+            </section>
+            <!--por onde começar-->
+            <section>
+                <h2>Por onde começar?</h2>
+                <p>Não existe apenas um caminho para entrar na área de tecnologia, mas alguns conhecimentos podem ajudar na construção de uma base inicial.</p>
+                <ol>
+                    <li>Conhecer os fundamentos da computação</li>
+                    <li>Aprender lógica de programação</li>
+                    <li>Estudar HTML</li>
+                    <li>Estudar CSS</li>
+                    <li>Estudar JavaScript</li>
+                    <li>desenvolver Projetos</li>
+                    <li>Continuar estudando novas tecnologias</li>
+                </ol>
+            </section>
+            <!--agenda de eventos-->
+            <section id="eventos">
+                <h2>Próximos Eventos</h2>
+                <article>
+                    <h3>Evento 1 - Introdução ao Desenvolvimento Web</h3>
+                    <p>Data: 28/08/2026</p>
+                    <p>Encontro introdutório sobre desenvolvimento de páginas utilizando HTML.</p>
+                </article>
+                <article>
+                    <h3>Evento 2 - Semana de Inteligência Artificial</h3>
+                    <p>Data: 11/09/2026</p>
+                    <p>Evento acadêmico voltado para discussão de conceitos e aplicações relacionadas à Inteligência Artificial.</p>
+                </article>
+                <article>
+                    <h3>Evento 3 - Encontro de Segurança da Informação</h3>
+                    <p>Data: 18/09/2026</p>
+                    <p>Atividade acadêmica destinada à discussão sobre proteção de sistemas e informações.</p>
+                </article>
+                <article>
+                    <h3>Evento 4 - Mostra de Projetos de Tecnologia</h3>
+                    <p>Data: 02/10/2026</p>
+                    <p>Apresentação de projetos desenvolvidos pelos estudantes dos cursos de tecnologia.</p>
+                </article>
+            </section>
+            <!-- Oportunidades acadêmicas-->
+            <section>
+                <h2>Oportunidades para estudantes</h2>
+                <p><strong>Monitoria:</strong> Estudantes poderão participar de processos de seleção para monitoria acadêmica.</p>
+                <p><strong>Projetos de extensão:</strong> Projetos de extensão permitem que estudantes participem de atividades relacionadas à comunidade e à aplicação prática do conhecimento.</p>
+                <p><strong>Pesquisa:</strong> Estudantes interessados poderão participar de projetos acadêmicos relacionados à pesquisa e inovação.</p>
+                <p><strong>Eventos acadêmicos:</strong> Congressos, seminários e oficinas podem contribuir para o desenvolvimento profissional e acadêmico.</p>
+            </section>
+            <!--Conteúdo recomendado-->
+            <section>
+                <h2>Conteúdos para acompanhar</h2>
+                <ul>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+                    <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN</a></li>
+                    <li><a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">W3C</a></li>
+                </ul>
+            </section>
+            <!--Informações do Portal-->
+            <section>
+                <h2>Sobre o Portal Horizonte Tech</h2>
+                <p>O Horizonte Tech é um portal acadêmico criado para divulgar conteúdos relacionados à tecnologia e às atividades desenvolvidas pela Faculdade Horizonte.</p>
+                <p>Missão: Compartilhar conhecimento e aproximar estudantes das diferentes áreas da tecnologia.</p>
+                <p>Visão: Tornar-se um espaço acadêmico de referência para divulgação de conhecimento tecnológico.</p>
+            </section>
+            
+        
+        </main>
+            <footer>
+                <p>Horizonte Tech</p>
+                <p>Faculdade Horizonte</p>
+                <p>2026 - Todos os direitos reservados.</p>
+                <p> desenvolvida na disciplina de Desenvolvimento Front-End.</p>
+            </footer>
+</body>
+</html>
