@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Atividade 05 - Formulário Avançado</h1>
+    </header>
+    <main>
+        <!--formulario-->
+        <section>
+            <form>
+                <label for="nome">nome:</label>
+                <input type="text" id="nome" name="nome_usuario"><br>
+
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email_usuario"><br>
+
+                <label for="senha">senha:</label>
+                <input type="password" id="senha" name="senha_usuario"><br>
+
+                <label for="confirmasenha">confirmaçao da senha:</label>
+                <input type="password" id="confirma_senha" name="confirma_senha"><br>
+
+                <p>genero</p>
+                <label for="masculino">masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino"><br>
+
+                <label for="feminino">feminino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino"><br>
+
+                <label for="outro">outro</label>
+                <input type="radio" id="outro" name="genero" value="outro"><br>
+
+                <p>interesses</p>
+                <label for="tecnologia">tecnologia</label>
+                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+                
+                <label for="esporte">esporte</label>
+                <input type="checkbox" id="esporte" name="interesses" value="esporte">
+
+                <label for="musica">musica</label>
+                <input type="checkbox"id="musica" name="interesses" value="musica">
+
+                <label for="viagem">viagem</label>
+                <input type="checkbox" id="viagem" name="interesses" value="viagem">
+
+                <label for="jogos">jogos</label>
+                <input type="checkbox" id="jogos" name="interesses" value="jogos"><br>
+
+                <select>
+                    <option>escolha</option>
+                    <option value="sp">sao paulo</option>
+                    <option value="rj">Rio de Janeio</option>
+                    <option value="pe">Pernambuco</option>
+                </select>
+            </form>
+            <form action="mensagem_botao.html" method="get">
+                <button type="submit">enviar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
