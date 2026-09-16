@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <main>
         <!--formulario-->
         <section>
-            <form action="mensagem_botao.html" method="get">
+            <form  onsubmit="alert('Formulário enviado com sucesso!'); return false;">
                 <label for="nome">nome:</label>
                 <input type="text" id="nome" name="nome_usuario"><br>
 
@@ -22,7 +22,7 @@
                 <label for="senha">senha:</label>
                 <input type="password" id="senha" name="senha_usuario"><br>
 
-                <label for="confirmasenha">confirmaçao da senha:</label>
+                <label for="confirma_senha">confirmaçao da senha:</label>
                 <input type="password" id="confirma_senha" name="confirma_senha"><br>
 
                 <p>genero</p>
@@ -43,7 +43,7 @@
                 <input type="checkbox" id="esporte" name="interesses" value="esporte">
 
                 <label for="musica">musica</label>
-                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <input type="checkbox"id="musica" name="interesses" value="musica">
 
                 <label for="viagem">viagem</label>
                 <input type="checkbox" id="viagem" name="interesses" value="viagem">
@@ -51,13 +51,13 @@
                 <label for="jogos">jogos</label>
                 <input type="checkbox" id="jogos" name="interesses" value="jogos"><br>
 
-                <button type="submit">enviar</button>
-                <select name=cidade>
+                <select name="estado">
                     <option>escolha</option>
                     <option value="sp">sao paulo</option>
                     <option value="rj">Rio de Janeio</option>
                     <option value="pe">Pernambuco</option>
-                </select>
+                </select><br>
+                <button type="submit">enviar</button>
             </form>
         </section>
     </main>
