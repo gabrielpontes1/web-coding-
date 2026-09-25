@@ -24,28 +24,30 @@ header{
     height: 60px;
     object-fit: cover;
 }
-header p{
-    padding: 1rem;
-    color: #2B2118;
-    text-align: center;
-}
 nav{
     color:#6F4E37;
     outline:none ;
-    cursor:pointer;
-    text-align: right;
-
 }
 nav ul{
     list-style: none;
     display: flex;
     gap: 2rem;
-    align-items: flex-end;
     font-size: 1.5rem;
+    flex-wrap: wrap;
 }
 nav a{
+    cursor: pointer;
     text-decoration: none;
     color: #2B2118;
+}
+h2{
+    padding: 1rem;
+    color: #5A2A1B;
+    font-size: 4rem;
+}
+p{
+    color: #2B2118;
+    padding: 0.2rem;
 }
 section{
     padding: 80px 0;
@@ -72,7 +74,7 @@ section{
     display: flex;
     flex-direction:column;
     align-items: center;
-    height: 70vh
+    height: 70vh;
 }
 .introduzir h1{
     padding: 2rem;
@@ -85,18 +87,7 @@ section{
     font-size: 1.5rem;
     color:#3B2314;
 }
-
-h2{
-    padding: 1rem;
-    color: #5A2A1B;
-    font-size: 4rem;
-}
-p{
-    color: #2B2118;
-    padding: 0.2rem;
-}
 form{
-    border-radius: 8px;
     background-color: #D9D9D9;
     margin:3rem;
     padding: 3rem;
@@ -115,7 +106,7 @@ form h2{
 .produtos img{
     width: 100%;
     max-width: 400px;
-    height: 250px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -141,8 +132,10 @@ button{
 .lista_depoimentos article{
     background-color:#FFF8F0;
     padding: 2rem;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
+/*tabela contatos*/
 table{
     border-collapse:collapse;
 }
@@ -150,4 +143,81 @@ td,th{
     border: 1px solid #C08552;
     padding: 0.5rem;
     text-align: left;
+}
+.sugestao fieldset{
+    padding: 2rem;
+    border: 1px solid #C08552;
+    display: flex;
+    flex-direction: column;
+}
+.sugestao fieldset button{
+    width:60px;
+}
+.sugestao fieldset input[type="text"]{
+    outline: none;
+    width: 100%;
+    max-width: 1000px;
+}
+.sugestao textarea{
+    width: 100%;
+    max-width: 1000px;
+    outline: none;
+    height: 150px;
+}
+/*rodape*/
+footer{
+    background-color: #5A2A1B;
+    margin: -1rem;
+    padding: 2rem;
+}
+footer p{
+    color: #FFF8F0;
+}
+.navegar_footer a{
+    color: #FFF8F0;
+}
+/*mobile*/
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: medium;
+    }
+    #sobre h2{
+        white-space: nowrap;
+        margin: -2rem;
+    }
+    .introduzir {
+        height: 50vh;
+    }
+    .introduzir h1 {
+        font-size: 4rem;
+    }
+    .introduzir p,.paragrafo_sobre{
+        font-size:1.2rem
+    }
+    h2{
+        font-size:3rem;
+        padding: 4rem;
+    }
+    form{
+        margin: -1rem;
+    }
+    .sugestao fieldset{
+        margin: -3rem;
+    }
+    button{
+        display: block;
+        min-width: 100%;
+    }
+    #depoimentos h2{
+        margin: -3rem;
+    }
 }
