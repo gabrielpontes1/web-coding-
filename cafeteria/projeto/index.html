@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cafe,abreu e lima,pernambuco,cafeteria">
-    <meta name="description" content="uma cafeteria renomada localizada em abreu e lima">
+    <meta name="keywords" content="café,abreu e lima,pernambuco,cafeteria">
+    <meta name="description" content="Uma cafeteria renomada localizada em Abreu e Lima.">
     <link rel="stylesheet" href="cafeteria_syle.css">
-    <title>Cafe Abreu</title>
+    <title>Café Abreu</title>
 </head>
 <body>
     <header>
         <img src="imagem/logotipo1.png" alt="logotipo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#sobre">sobre</a></li>
-                <li><a href="#cardapio">cardapio</a></li>
-                <li><a href="#depoimentos">depoimentos</a></li>
-                <li><a href="#contato">contato</a></li>
-            </ul>
-        </nav>
+        <div class="navegar_topo">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardapio</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sugestoes">Sugestões</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <!--sobre-->
@@ -27,19 +30,20 @@
                 <h1>Café Abreu</h1>
                 <p>Mais do que servir café, queremos ser o lugar do seu intervalo</p>
             </div>
-            <h2>Sobre nos</h2>
+
+            <h2>Sobre nós</h2>
             <p class="paragrafo_sobre">A Café Abreu nasceu do gosto simples por um bom café e da vontade de criar um lugar onde as pessoas pudessem desacelerar. Desde o início, nosso compromisso é com grãos selecionados, torra artesanal e aquele cuidado de quem prepara cada xícara pensando em quem vai tomar.</p>
-            <p class="paragrafo_sobre">Mais do que servir café, queremos ser o lugar do seu intervalo,nosso ambiente foi pensado pra ser aconchegante, com aquele cheirinho de café fresco que já entra pela porta.</p>
+            <p class="paragrafo_sobre">Mais do que servir café, queremos ser o lugar do seu intervalo.Nosso ambiente foi pensado para ser aconchegante, com aquele cheirinho de café fresco que já entra pela porta.</p>
         </section>
         <!--cardapio-->
         <section id="cardapio">
-            <h2>Cardapio</h2>
+            <h2>Cardápio</h2>
             <form>
                 <h2>Bebidas</h2>
                 <div class="produtos">
                     <article>
-                        <h3>cafe espresso</h3>
-                        <img src="imagem/cafe_espresso.jfif" alt="ilustra o nosso cafe">
+                        <h3>Café espresso</h3>
+                        <img src="imagem/cafe_espresso.jfif" alt="Ilustra o nosso café">
                         <p>Café puro, encorpado e intenso, extraído na hora — a base de todo bom café.</p>
                         <p>R$ 6,50</p>
                         <input type="checkbox" name="cafe_espresso" id="cafe_espresso" value="6.50">
@@ -66,23 +70,23 @@
                         <label for="mocha_gelado">adicionar</label>
                     </article>
                 </div>
-                <h2>comidas</h2>
+                <h2>Comidas</h2>
                 <div class="produtos">
                     <article>
                         <h3>Pão de Queijo Artesanal (porção)</h3>
-                        <img src="imagem/pao-de-queijo_1760622684361-1140x570.webp" alt="imagem ilustrativa do pao de queijo">
+                        <img src="imagem/pao-de-queijo_1760622684361-1140x570.webp" alt="Imagem ilustrativa do pão de queijo">
                         <p>Quentinho, feito na casa, perfeito pra acompanhar qualquer bebida do cardápio.</p>
                         <p>R$ 8,00</p> 
                         <input type="checkbox" name="pao_de_queijo" id="pao_de_queijo" value="8.00">
                         <label for="pao_de_queijo">adicionar</label>
                     </article>
                 </div>
-                <button>finalizar pedido</button>
+                <button>Finalizar pedido</button>
             </form>
         <!--depoimentos-->
         </section>
-        <section id="depoimentos" class="depoimentos">
-            <h2>depoimentos</h2>
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
             <div class="lista_depoimentos">
             <article>
                 <h3>Depoimento 1</h3>
@@ -90,7 +94,7 @@
                 <p>-Mariana Costa</p>
             </article>
             <article>
-                <h3>depoimento 2</h3>
+                <h3>Depoimento 2</h3>
                 <p>"Ambiente aconchegante, perfeito pra trabalhar com o notebook. O cappuccino é o melhor que já tomei na região."</p>
                 <p>— Rafael Souza</p>
             </article>
@@ -105,25 +109,62 @@
         <section id="contato">
             <h2>Contato</h2>
             <table>
-                <caption>onde estamos</caption>
+                <caption>Onde estamos</caption>
                 <tbody>
                     <tr>
                         <th>Endereço</th>
-                        <td>Rua do Cajueiro,centro,Abreu e Lima PE</td>
+                        <td>Rua do Cajueiro, Centro, Abreu e Lima - PE</td>
                     </tr>
                     <tr>
-                        <th>telefone</th>
+                        <th>Telefone</th>
                         <td>55 81 99999-9999</td>
                     </tr>
                     <tr>
-                        <th>email</th>
+                        <th>E-mail</th>
                         <td>cafeteriaabreu@gmail.com</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+        <section id="sugestoes">
+            <h2>Sugestões</h2>
+            <form>
+                <div class="sugestao">
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" required>
+
+                        <label for="comentario">Comentario</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                        
+                        <button>enviar</button>
+                    </fieldset>
+                    
+                </div>
+            </form>
+        </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <p>Café Abreu</p>
+        <p>Rua do Cajueiro, Centro, Abreu e Lima - PE</p>
+        <p>Telefone: (81) 99999-9999</p>
+        <p>Email: cafeteriaabreu@gmail.com</p>
+
+        <nav class="navegar_footer">
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+            <a href="#sugestoes">sugestões</a>
+        </nav>
+
+        <p>&copy; 2026 Café Abreu</p>
+    </footer>
 </body>
 </html>
