@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,50 +21,65 @@
         </nav>
     </header>
     <main>
+        <!--sobre-->
         <section id="sobre">
             <div class="introduzir">
-            <h1>Café Abreu</h1>
-            <p>Mais do que servir café, queremos ser o lugar do seu intervalo</p>
+                <h1>Café Abreu</h1>
+                <p>Mais do que servir café, queremos ser o lugar do seu intervalo</p>
             </div>
             <h2>Sobre nos</h2>
+            <p class="paragrafo_sobre">A Café Abreu nasceu do gosto simples por um bom café e da vontade de criar um lugar onde as pessoas pudessem desacelerar. Desde o início, nosso compromisso é com grãos selecionados, torra artesanal e aquele cuidado de quem prepara cada xícara pensando em quem vai tomar.</p>
+            <p class="paragrafo_sobre">Mais do que servir café, queremos ser o lugar do seu intervalo,nosso ambiente foi pensado pra ser aconchegante, com aquele cheirinho de café fresco que já entra pela porta.</p>
         </section>
+        <!--cardapio-->
         <section id="cardapio">
             <h2>Cardapio</h2>
-            <fieldset>
+            <form>
+                <h2>Bebidas</h2>
                 <div class="produtos">
-                    <h3>cafe espresso</h3>
-                    <img src="imagem/cafe_espresso.jfif" alt="ilustra o nosso cafe">
-                    <p>Café puro, encorpado e intenso, extraído na hora — a base de todo bom café.</p>
-                    <p>R$ 6,50</p>
-                    <input type="checkbox" name="cafe_espresso" id="cafe_espresso">
-                    <label for="cafe_espresso">adicionar</label>
+                    <article>
+                        <h3>cafe espresso</h3>
+                        <img src="imagem/cafe_espresso.jfif" alt="ilustra o nosso cafe">
+                        <p>Café puro, encorpado e intenso, extraído na hora — a base de todo bom café.</p>
+                        <p>R$ 6,50</p>
+                        <input type="checkbox" name="cafe_espresso" id="cafe_espresso" value="6.50">
+                        <label for="cafe_espresso">adicionar</label>
+                    </article>
                 </div>
                 <div class="produtos">
-                    <h3>Cappuccino Cremoso</h3>
-                    <img src="imagem/capuccino.webp" alt="imagem ilustrativa do nosso Cappuccino">
-                    <p>Espresso com leite vaporizado e uma camada generosa de espuma, finalizado com canela.</p>
-                    <p>R$ 9,90</p>
-                    <input type="checkbox" name="Cappuccino" id="Cappuccino">
-                    <label for="capuccino">adicionar</label>
+                    <article>
+                        <h3>Cappuccino Cremoso</h3>
+                        <img src="imagem/capuccino.webp" alt="imagem ilustrativa do nosso Cappuccino">
+                        <p>Espresso com leite vaporizado e uma camada generosa de espuma, finalizado com canela.</p>
+                        <p>R$ 9,90</p>
+                        <input type="checkbox" name="Cappuccino" id="Cappuccino" value="9.90">
+                        <label for="Cappuccino">adicionar</label>
+                    </article>
                 </div>
                 <div class="produtos">
-                    <h3>Mocha Gelado</h3>
-                    <img src="imagem/mocha_gelado.webp" alt="imagem ilustrativa do nosso mocha gelado">
-                    <p>Café, chocolate e leite bem gelados, coberto com chantilly — pra quem gosta de um café mais doce.</p>
-                    <p>R$ 12,50</p>
-                    <input type="checkbox" name="mocha_gelado" id="mocha_gelado">
-                    <label for="mocha_gelado">adicionar</label>
+                    <article>
+                        <h3>Mocha Gelado</h3>
+                        <img src="imagem/mocha_gelado.webp" alt="imagem ilustrativa do nosso mocha gelado">
+                        <p>Café, chocolate e leite bem gelados, coberto com chantilly — pra quem gosta de um café mais doce.</p>
+                        <p>R$ 12,50</p>
+                        <input type="checkbox" name="mocha_gelado" id="mocha_gelado" value="12.50">
+                        <label for="mocha_gelado">adicionar</label>
+                    </article>
                 </div>
+                <h2>comidas</h2>
                 <div class="produtos">
-                    <h3>Pão de Queijo Artesanal (porção)</h3>
-                    <img src="imagem/pao-de-queijo_1760622684361-1140x570.webp" alt="imagem ilustrativa do pao de queijo">
-                    <p>Quentinho, feito na casa, perfeito pra acompanhar qualquer bebida do cardápio.</p>
-                    <p>R$ 8,00</p> 
-                    <input type="checkbox" name="pao_de_queijo" id="pao_de_queijo">
-                    <label for="pao_de_queijo">adicionar</label>
+                    <article>
+                        <h3>Pão de Queijo Artesanal (porção)</h3>
+                        <img src="imagem/pao-de-queijo_1760622684361-1140x570.webp" alt="imagem ilustrativa do pao de queijo">
+                        <p>Quentinho, feito na casa, perfeito pra acompanhar qualquer bebida do cardápio.</p>
+                        <p>R$ 8,00</p> 
+                        <input type="checkbox" name="pao_de_queijo" id="pao_de_queijo" value="8.00">
+                        <label for="pao_de_queijo">adicionar</label>
+                    </article>
                 </div>
                 <button>finalizar pedido</button>
-            </fieldset>
+            </form>
+        <!--depoimentos-->
         </section>
         <section id="depoimentos" class="depoimentos">
             <h2>depoimentos</h2>
@@ -86,8 +101,29 @@
             </article>
             </div>
         </section>
+        <!--contato-->
         <section id="contato">
+            <h2>Contato</h2>
+            <table>
+                <caption>onde estamos</caption>
+                <tbody>
+                    <tr>
+                        <th>Endereço</th>
+                        <td>Rua do Cajueiro,centro,Abreu e Lima PE</td>
+                    </tr>
+                    <tr>
+                        <th>telefone</th>
+                        <td>55 81 99999-9999</td>
+                    </tr>
+                    <tr>
+                        <th>email</th>
+                        <td>cafeteriaabreu@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+
     </main>
+    <footer></footer>
 </body>
 </html>
