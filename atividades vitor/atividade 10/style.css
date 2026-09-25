@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0F172A;
+    color:white;
+    font-family: 'Playfair Display';
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    cursor: pointer;
+}
+section{
+    padding: 2rem;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+
+.avisos{
+    right: 0;
+    position:fixed;
+    background: yellow;
+    padding: 3rem;
+    color: red;
+    border: 3px solid red;
+    cursor: pointer;
+}
+#minicursos {
+    background-color: #1E293B;
+}
+.minicurso_style{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.minicurso_style article{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border:1px solid white;
+    border-radius: 8px;
+}
+
+table{
+    border-collapse: collapse;
+}
+caption{
+    font-weight:500;
+    font-size: x-large;
+}
+td,th{
+    padding: 1rem;
+    border: 1px solid white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 50%;
+    gap: 1rem;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+form input[type="text"],
+form input[type="email"] {
+    width: 350px; /* você escolhe o tamanho exato */
+    padding: 0.5rem;
+}
+select {
+    width: 350px; /* você escolhe o tamanho exato */
+    padding: 0.5rem;
+}
+.opcao-radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+button{
+    cursor: pointer;
+
+}
+footer{
+    background:wheat;
+    padding: 2rem;
+    color: black;
+}

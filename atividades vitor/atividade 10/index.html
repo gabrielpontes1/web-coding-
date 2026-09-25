@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>semana-tecnologia 2026</title>
+</head>
+<body>
+    <header>
+        <h1>semana tecnologia 2026</h1>
+        <nav>
+            <a href="#minicursos">minicursos</a>
+            <a href="#forumlario">inscrição</a>
+            <a href="#inscrever_estado">Situação da inscrição</a>
+        </nav>
+    </header>
+    <main>
+        <p class="avisos">novas vagas!!</p>
+        <!--informao dos minicursos-->
+        <section id="minicursos">
+            <h2>minicursos</h2>
+            <div class="minicurso_style">
+            <article >
+                <h2>Introdução à Inteligência Artificial</h2>
+                <p>Apresentação dos conceitos fundamentais de Inteligência Artificial, suas principais aplicações e ferramentas        disponíveis. O minicurso também abordará o uso responsável da IA em atividades acadêmicas e profissionais.</p>
+                <p>carga horaria:4 horas</p>
+                <p>30 vagas</p>
+            </article>
+            </div>
+            <div class="minicurso_style">
+            <article >
+                <h2>Comunicação e Oratória</h2>
+                <p>Desenvolvimento de técnicas de comunicação verbal e não verbal, organização de apresentações, controle da ansiedade e estratégias para falar em público com maior clareza e segurança.</p>
+                <p>carga horaria:4 horas</p>
+                <p>25 vagas</p>
+            </article>
+            </div>
+            <div class="minicurso_style">
+            <article>
+                <h2>Produção de Currículo e Preparação para Entrevistas</h2>
+                <p>Orientações práticas para elaboração de currículo, apresentação profissional, comportamento em processos seletivos e preparação para entrevistas de emprego.</p>
+                <p>carga horaria:3 horas</p>
+                <p>30 vagas</p>
+            </article>
+            </div>
+        </section>
+        <!--formulario-->
+        <section id="formulario">
+            <h2>formulario de inscriçao</h2><br>
+            <form>
+                <label for="nome_inscrever">nome</label>
+                <input type="text" id="nome_inscrever" name="nome" required><br>
+
+                <label for="email_inscrever">email</label>
+                <input type="email" id="email_inscrever" name="email" required><br>
+
+                <label for="curso_inscrever">curso</label>
+                <input type="text" id="curso_inscrever" name="curso" required><br>
+                
+                <label for="minicurso_inscrever">minicurso</label>
+                <select name="minicurso" id="minicurso_inscrever" required>
+                    <option value=""></option>
+                    <option value="Produção de Currículo e Preparação para Entrevistas">Produção de Currículo e Preparação para Entrevistas</option>
+                    <option value="Comunicação e Oratória">Comunicação e Oratória</option>
+                    <option value="Introdução à Inteligência Artificial">Introdução à Inteligência Artificial</option>
+                </select>
+
+                <p>turno:</p>
+                <div class="opcao-radio">
+                <label for="turno_matutino">matutino</label>
+                <input type="radio" id="turno_matutino" name="turno" value="matutino" required>
+                </div>
+                <div class="opcao-radio">
+                <label for="turno_noturno">noturno</label>
+                <input type="radio" id="turno_noturno" name="turno" value="noturno" required><br>
+                </div>
+                <div class="opcao-radio">
+                <label for="confirmar">confirmar interesse</label>
+                <input type="checkbox" id="confirmar" name="confirmar" required><br>
+                </div>
+                <button type="submit">inscrever</button>
+            </form>
+        <!--conferir inscrição-->
+        </section>
+        <section id="inscrever_estado">
+            <table>
+                <caption>situação da inscrição</caption>
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>curso</th>
+                        <th>minicurso</th>
+                        <th>turno</th>
+                        <th>Situação da inscrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Beatriz Silva</td>
+                        <td>Sistemas de Informação</td>
+                        <td rowspan="2">Introdução à Inteligência Artificial</td>
+                        <td>Manhã</td>
+                        <td>confirmada</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Gabriel Souza</td>
+                        <td>Ciência da Computação</td>
+                        <td>noturno</td>
+                        <td>confirmada</td>
+                    </tr>
+                    <tr>
+                        <td>João Pedro Santos</td>
+                        <td>Administração</td>
+                        <td>Comunicação e Oratória</td>
+                        <td>noturno</td>
+                        <td>pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Eduarda Lima</td>
+                        <td>Engenharia de Software</td>
+                        <td>Produção de Currículo e Entrevistas</td>
+                        <td>Manhã</td>
+                        <td>confirmada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy semana tecnologia 2026</p>
+    </footer>
+
+</body>
+</html>
