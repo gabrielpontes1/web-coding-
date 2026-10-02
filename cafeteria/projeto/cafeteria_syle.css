@@ -11,7 +11,6 @@ body{
 }
 header{
     background-color:#C08552 ;
-    margin: -1rem -1rem 0 -1rem;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -200,7 +199,6 @@ td,th{
 /*rodape*/
 footer{
     background-color: #5A2A1B;
-    margin: -1rem;
     padding: 2rem;
 }
 footer p{
@@ -240,7 +238,6 @@ footer p{
         align-items: center;
     }
     #sobre h2{
-        white-space: nowrap;
         margin: -2rem;
     }
     .introduzir {
