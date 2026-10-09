@@ -48,7 +48,7 @@ projeto/
 ├── imagem/
 │   ├── logotipo1.png
 │   ├── local.webp
-│   ├── cafe_espresso.jfif
+│   ├── cafe_espresso.webp
 │   ├── capuccino.webp
 │   ├── mocha_gelado.webp
 │   └── pao-de-queijo_1760622684361-1140x570.webp
