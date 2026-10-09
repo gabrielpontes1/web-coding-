@@ -189,7 +189,7 @@ td,th{
 .sugestao fieldset button{
     width:60px;
 }
-.sugestao fieldset input[type="text"]{
+.sugestao fieldset input[type="text"], .sugestao fieldset input[type="tel"]{
     outline: none;
     width: 100%;
     max-width: 1000px;
