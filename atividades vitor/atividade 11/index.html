@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextLevel Academy | Treinamentos</title>
+
+    <!-- Conecta este documento HTML à folha de estilos externa. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com o nome e a apresentação do portal. -->
+    <header class="cabecalho">
+        <div class="conteudo-cabecalho">
+            <p class="marca-pequena">NEXTLEVEL TECH</p>
+            <h1 id="titulo-principal">NextLevel Academy</h1>
+            <p>Conhecimento que impulsiona sua carreira.</p>
+        </div>
+    </header>
+
+    <!-- Menu com links que levam às seções desta página. -->
+    <nav class="navegacao" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#treinamentos">Treinamentos</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="#participantes">Participantes</a>
+    </nav>
+
+    <main>
+        <!-- Introdução ao portal. -->
+        <section id="inicio" class="apresentacao">
+            <p class="sobretitulo">ACADEMIA CORPORATIVA</p>
+            <h2>Aprenda hoje. Evolua sempre.</h2>
+            <p>
+                A NextLevel Academy reúne treinamentos técnicos para ajudar os
+                colaboradores a desenvolver habilidades, compartilhar conhecimento
+                e crescer profissionalmente.
+            </p>
+            <a class="botao-link" href="#treinamentos">Explorar treinamentos</a>
+        </section>
+
+        <!-- Cards com os quatro treinamentos exigidos no enunciado. -->
+        <section id="treinamentos" class="secao">
+            <div class="titulo-secao">
+                <p class="sobretitulo">APRENDA COM A GENTE</p>
+                <h2>Treinamentos disponíveis</h2>
+                <p>Confira os detalhes e escolha o treinamento ideal para você.</p>
+            </div>
+
+            <div class="grade-cards">
+                <article class="card-treinamento">
+                    <!-- Selo posicionado em relação ao card usando position. -->
+                    <span class="selo selo-novo">Novo</span>
+                    <p class="categoria categoria-web">TECNOLOGIA</p>
+                    <h3>Desenvolvimento Web</h3>
+                    <p class="descricao">Aprenda a estruturar páginas com HTML e criar estilos com CSS.</p>
+                    <ul class="informacoes-card">
+                        <li><strong>Carga horária:</strong> 12 horas</li>
+                        <li><strong>Modalidade:</strong> Presencial</li>
+                        <li><strong>Vagas:</strong> 20</li>
+                    </ul>
+                    <p class="status status-disponivel">Disponível</p>
+                </article>
+
+                <article class="card-treinamento">
+                    <p class="categoria categoria-seguranca">SEGURANÇA</p>
+                    <h3>Segurança da Informação</h3>
+                    <p class="descricao">Conheça práticas para proteger dados e evitar riscos digitais.</p>
+                    <ul class="informacoes-card">
+                        <li><strong>Carga horária:</strong> 8 horas</li>
+                        <li><strong>Modalidade:</strong> Online</li>
+                        <li><strong>Vagas:</strong> 15</li>
+                    </ul>
+                    <p class="status status-disponivel">Disponível</p>
+                </article>
+
+                <article class="card-treinamento card-ultimas-vagas">
+                    <span class="selo selo-urgente">Últimas vagas</span>
+                    <p class="categoria categoria-dados">INOVAÇÃO</p>
+                    <h3>Introdução à Inteligência Artificial</h3>
+                    <p class="descricao">Explore conceitos básicos de IA e exemplos de uso no trabalho.</p>
+                    <ul class="informacoes-card">
+                        <li><strong>Carga horária:</strong> 10 horas</li>
+                        <li><strong>Modalidade:</strong> Online</li>
+                        <li><strong>Vagas:</strong> 3</li>
+                    </ul>
+                    <p class="status status-ultimas">Últimas vagas</p>
+                </article>
+
+                <article class="card-treinamento card-encerrado">
+                    <p class="categoria categoria-gestao">GESTÃO</p>
+                    <h3>Gestão de Projetos</h3>
+                    <p class="descricao">Organize tarefas, prazos e recursos para alcançar objetivos.</p>
+                    <ul class="informacoes-card">
+                        <li><strong>Carga horária:</strong> 16 horas</li>
+                        <li><strong>Modalidade:</strong> Presencial</li>
+                        <li><strong>Vagas:</strong> 0</li>
+                    </ul>
+                    <p class="status status-encerrado">Encerrado</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Formulário de inscrição com validação nativa do navegador. -->
+        <section id="inscricao" class="secao secao-formulario">
+            <div class="titulo-secao">
+                <p class="sobretitulo">PARTICIPE</p>
+                <h2>Formulário de inscrição</h2>
+                <p>Preencha os campos abaixo. Os itens com * são obrigatórios.</p>
+            </div>
+
+            <form action="#" method="post">
+                <div class="grade-formulario">
+                    <div class="campo">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail corporativo *</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="nome@empresa.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="matricula">Matrícula *</label>
+                        <input type="text" id="matricula" name="matricula"
+                               pattern="[A-Za-z0-9-]{3,15}"
+                               title="Use de 3 a 15 letras, números ou hífens."
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="departamento">Departamento *</label>
+                        <select id="departamento" name="departamento" required>
+                            <option value="">Selecione seu departamento</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                            <option value="Financeiro">Financeiro</option>
+                            <option value="Operações">Operações</option>
+                            <option value="Gestão">Gestão</option>
+                            <option value="Segurança">Segurança</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="treinamento">Treinamento desejado *</label>
+                        <select id="treinamento" name="treinamento" required>
+                            <option value="">Selecione um treinamento</option>
+                            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                            <option value="Segurança da Informação">Segurança da Informação</option>
+                            <option value="Inteligência Artificial">Introdução à Inteligência Artificial</option>
+                            <option value="Gestão de Projetos">Gestão de Projetos</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="campo">
+                        <legend>Modalidade preferida *</legend>
+                        <label class="opcao">
+                            <input type="radio" name="modalidade" value="Presencial" required>
+                            Presencial
+                        </label>
+                        <label class="opcao">
+                            <input type="radio" name="modalidade" value="Online">
+                            Online
+                        </label>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="nivel">Nível de conhecimento *</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">Selecione seu nível</option>
+                            <option value="Iniciante">Iniciante</option>
+                            <option value="Intermediário">Intermediário</option>
+                            <option value="Avançado">Avançado</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="data">Data disponível para participar *</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="campo campo-largo">
+                        <label for="observacoes">Observações *</label>
+                        <textarea id="observacoes" name="observacoes" rows="4"
+                                  placeholder="Informe necessidades ou comentários (mínimo de 5 caracteres)."
+                                  minlength="5" maxlength="400" required></textarea>
+                    </div>
+
+                    <div class="campo campo-largo">
+                        <label class="opcao" for="confirmacao">
+                            <input type="checkbox" id="confirmacao" name="confirmacao" required>
+                            Confirmo que as informações fornecidas estão corretas. *
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Realizar inscrição</button>
+                <p class="nota-formulario">
+                    Protótipo acadêmico: o formulário não salva dados porque esta versão não possui Back-End.
+                </p>
+            </form>
+        </section>
+
+        <!-- Tabela de exemplo com seis inscrições fictícias. -->
+        <section id="participantes" class="secao">
+            <div class="titulo-secao">
+                <p class="sobretitulo">ACOMPANHAMENTO</p>
+                <h2>Participantes inscritos</h2>
+                <p>Registros fictícios para demonstrar a organização da tabela.</p>
+            </div>
+
+            <div class="tabela-contorno">
+                <table>
+                    <caption>Inscrições nos treinamentos da NextLevel Academy</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Matrícula</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Treinamento</th>
+                            <th scope="col">Modalidade</th>
+                            <th scope="col">Nível</th>
+                            <th scope="col">Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NL1021</td>
+                            <td>Ana Souza</td>
+                            <td>Desenvolvimento Web</td>
+                            <td>Presencial</td>
+                            <td>Iniciante</td>
+                            <td><span class="estado estado-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>NL1043</td>
+                            <td>Bruno Lima</td>
+                            <td>Segurança da Informação</td>
+                            <td>Online</td>
+                            <td>Intermediário</td>
+                            <td><span class="estado estado-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>NL1088</td>
+                            <td>Camila Rocha</td>
+                            <td>Inteligência Artificial</td>
+                            <td>Online</td>
+                            <td>Iniciante</td>
+                            <td><span class="estado estado-pendente">Pendente</span></td>
+                        </tr>
+                        <tr>
+                            <td>NL1102</td>
+                            <td>Diego Alves</td>
+                            <td>Gestão de Projetos</td>
+                            <td>Presencial</td>
+                            <td>Avançado</td>
+                            <td><span class="estado estado-encerrado">Lista de espera</span></td>
+                        </tr>
+                        <tr>
+                            <td>NL1137</td>
+                            <td>Elisa Costa</td>
+                            <td>Desenvolvimento Web</td>
+                            <td>Online</td>
+                            <td>Intermediário</td>
+                            <td><span class="estado estado-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>NL1190</td>
+                            <td>Felipe Santos</td>
+                            <td>Segurança da Informação</td>
+                            <td>Online</td>
+                            <td>Iniciante</td>
+                            <td><span class="estado estado-pendente">Pendente</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <!-- colspan faz uma célula ocupar seis colunas da tabela. -->
+                            <td colspan="5">Total de inscrições listadas</td>
+                            <td>6</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exemplo didático de especificidade entre elemento, classe e ID. -->
+        <section class="secao exemplo-especificidade">
+            <h2>Exemplo de especificidade CSS</h2>
+            <p class="destaque" id="aviso">
+                As vagas para os treinamentos são limitadas.
+            </p>
+            <p class="explicacao">
+                O parágrafo acima recebe regras de p, .destaque e #aviso.
+                A regra do ID possui maior especificidade e determina a cor final do texto.
+            </p>
+        </section>
+    </main>
+
+    <!-- Rodapé com identificação do portal. -->
+    <footer class="rodape">
+        <p class="rodape-nome">NextLevel Academy</p>
+        <p>Portal interno de treinamentos técnicos — NextLevel Tech</p>
+        <p class="rodape-final">Protótipo acadêmico desenvolvido com HTML5 e CSS3.</p>
+    </footer>
+</body>
+</html>

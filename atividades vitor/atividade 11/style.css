@@ -1,0 +1,530 @@
+/* =========================================================
+   NEXTLEVEL ACADEMY
+   Folha de estilos externa: style.css
+   ========================================================= */
+
+/* Box Model: largura e altura incluem padding e border. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26364A;
+    background-color: #F3F6FA;
+    line-height: 1.6;
+}
+
+/* Cabeçalho principal do portal. */
+.cabecalho {
+    background-color: #172D4D;
+    color: #FFFFFF;
+    padding: 34px 7%;
+}
+
+.conteudo-cabecalho {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.marca-pequena {
+    margin: 0;
+    color: #8ED8F8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#titulo-principal {
+    margin: 5px 0;
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+/* Menu de navegação. display:flex alinha os links em uma linha. */
+.navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    padding: 14px 7%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DCE4ED;
+}
+
+.navegacao a {
+    color: #1C5B8F;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navegacao a:hover {
+    color: #0C83B8;
+    text-decoration: underline;
+}
+
+/* Limita a largura do conteúdo e centraliza a página. */
+main {
+    width: 86%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 32px 0;
+}
+
+.apresentacao {
+    margin-top: 32px;
+    padding: 38px;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE7F0;
+    border-left: 5px solid #21A0CF;
+    border-radius: 10px;
+}
+
+.sobretitulo {
+    margin: 0 0 6px;
+    color: #1685B1;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.apresentacao h2 {
+    max-width: 650px;
+    margin: 0 0 12px;
+    color: #172D4D;
+    font-size: 30px;
+    line-height: 1.25;
+}
+
+.apresentacao > p:not(.sobretitulo) {
+    max-width: 760px;
+    color: #526174;
+}
+
+.botao-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background-color: #176B9A;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao-link:hover {
+    background-color: #104B70;
+    text-decoration: underline;
+}
+
+/* Títulos das seções. */
+.titulo-secao {
+    margin-bottom: 20px;
+}
+
+.titulo-secao h2,
+.exemplo-especificidade h2 {
+    margin: 0 0 8px;
+    color: #172D4D;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.titulo-secao > p:not(.sobretitulo) {
+    margin-top: 5px;
+    color: #657386;
+    font-size: 14px;
+}
+
+/* Cards de treinamento organizados em duas colunas. */
+.grade-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-treinamento {
+    position: relative; /* Referência para o selo com position:absolute. */
+    flex: 1 1 calc(50% - 20px);
+    min-width: 260px;
+    padding: 25px;
+    border: 1px solid #DDE6EF;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+}
+
+/* Selo fica no canto superior direito do card. */
+.selo {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 1;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.selo-novo {
+    color: #145A82;
+    background-color: #DDF3FF;
+}
+
+.selo-urgente {
+    color: #7D4C08;
+    background-color: #FFF0CC;
+}
+
+.categoria {
+    display: inline-block;
+    margin: 0 0 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.categoria-web {
+    color: #1D5D8D;
+    background-color: #E0F1FC;
+}
+
+.categoria-seguranca {
+    color: #286543;
+    background-color: #E2F4E8;
+}
+
+.categoria-dados {
+    color: #67479A;
+    background-color: #F0E8FC;
+}
+
+.categoria-gestao {
+    color: #8A5A1C;
+    background-color: #FFF0D9;
+}
+
+.card-treinamento h3 {
+    margin: 5px 0 10px;
+    color: #172D4D;
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.descricao {
+    min-height: 48px;
+    color: #59687A;
+    font-size: 14px;
+}
+
+.informacoes-card {
+    padding-left: 19px;
+    color: #45566B;
+    font-size: 13px;
+}
+
+.informacoes-card li {
+    margin: 4px 0;
+}
+
+/* Situações dos treinamentos têm cores distintas. */
+.status {
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.status-disponivel {
+    color: #21633B;
+    background-color: #E0F4E6;
+}
+
+.status-ultimas {
+    color: #88570C;
+    background-color: #FFF0D2;
+}
+
+.status-encerrado {
+    color: #8C3030;
+    background-color: #FBE5E5;
+}
+
+.card-encerrado {
+    border-color: #E6D5D5;
+}
+
+/* Formulário. */
+.secao-formulario {
+    padding: 28px;
+    border: 1px solid #DDE6EF;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+}
+
+.grade-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.campo {
+    flex: 1 1 calc(50% - 18px);
+    min-width: 220px;
+    margin: 0;
+}
+
+.campo-largo {
+    flex-basis: 100%;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: 6px;
+    color: #29394D;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #C8D5E2;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #26364A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #A5DDF4;
+    border-color: #1685B1;
+}
+
+fieldset.campo {
+    padding: 12px;
+    border: 1px solid #C8D5E2;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    padding: 0 5px;
+}
+
+.opcao {
+    display: inline-block;
+    margin: 5px 16px 5px 0;
+    font-weight: normal;
+}
+
+.opcao input {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #176B9A;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #104B70;
+}
+
+.nota-formulario {
+    color: #6A7889;
+    font-size: 12px;
+}
+
+/* Tabela de participantes. */
+.tabela-contorno {
+    overflow-x: auto;
+    border: 1px solid #DDE6EF;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+}
+
+caption {
+    padding: 15px;
+    color: #172D4D;
+    font-weight: bold;
+    text-align: left;
+}
+
+thead {
+    background-color: #172D4D;
+}
+
+th {
+    padding: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #E2E8F0;
+    color: #3E4E61;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F6F9FC;
+}
+
+tfoot td {
+    background-color: #E6EEF6;
+    color: #172D4D;
+    font-weight: bold;
+}
+
+/* Etiquetas de situação para os participantes. */
+.estado {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.estado-confirmado {
+    color: #21633B;
+    background-color: #E0F4E6;
+}
+
+.estado-pendente {
+    color: #88570C;
+    background-color: #FFF0D2;
+}
+
+.estado-encerrado {
+    color: #8C3030;
+    background-color: #FBE5E5;
+}
+
+/* Exemplo de especificidade: o mesmo p é selecionado por elemento,
+   classe e ID. A regra do ID prevalece sobre as outras duas. */
+p {
+    color: #26364A;
+}
+
+p.destaque {
+    color: #176B9A;
+}
+
+#aviso {
+    padding: 13px;
+    border-left: 4px solid #C13B3B;
+    background-color: #FBEAEA;
+    color: #A32323;
+    font-weight: bold;
+}
+
+.explicacao {
+    color: #657386;
+    font-size: 13px;
+}
+
+/* Rodapé. */
+.rodape {
+    margin-top: 42px;
+    padding: 28px 7%;
+    background-color: #172D4D;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+}
+
+.rodape p {
+    margin: 5px 0;
+    color: #FFFFFF;
+}
+
+.rodape-nome {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.rodape-final {
+    color: #C8D7E7 !important;
+    font-size: 11px;
+}
+
+/* Em telas estreitas, os cards e campos ficam empilhados. */
+@media (max-width: 650px) {
+    .cabecalho {
+        padding: 26px 5%;
+    }
+
+    #titulo-principal {
+        font-size: 28px;
+    }
+
+    .navegacao {
+        gap: 14px;
+        padding: 12px 5%;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .apresentacao,
+    .secao-formulario {
+        padding: 21px;
+    }
+
+    .apresentacao h2 {
+        font-size: 25px;
+    }
+
+    .card-treinamento {
+        flex-basis: 100%;
+    }
+
+    .campo {
+        flex-basis: 100%;
+    }
+}
