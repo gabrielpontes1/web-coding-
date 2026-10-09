@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop de Desenvolvimento Web</title>
+
+    <!-- Conecta este arquivo HTML ao CSS externo. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <h1 id="titulo-principal">Workshop de Desenvolvimento Web</h1>
+        <p>HTML, CSS e os primeiros passos no Front-End</p>
+    </header>
+
+    <!-- Menu com links para as seções da própria página -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="#participantes">Participantes</a>
+    </nav>
+
+    <main id="inicio">
+
+        <!-- Informações sobre o evento -->
+        <section id="sobre">
+            <h2>Sobre o Workshop</h2>
+
+            <p>
+                O Workshop de Desenvolvimento Web apresentará conceitos iniciais de HTML
+                e CSS para estudantes interessados em iniciar seus estudos na área de Front-End.
+            </p>
+
+            <!-- A classe destaque será estilizada no CSS -->
+            <p class="destaque"><strong>Data:</strong> 25/09/2026</p>
+            <p class="destaque"><strong>Horário:</strong> 09h às 12h</p>
+            <p class="destaque"><strong>Local:</strong> Laboratório de Informática</p>
+
+            <!-- Este parágrafo será usado para demonstrar especificidade no CSS -->
+            <p id="aviso" class="destaque">
+                As vagas para o workshop são limitadas.
+            </p>
+        </section>
+
+        <!-- Formulário de inscrição: sem JavaScript -->
+        <section id="inscricao">
+            <h2>Faça sua inscrição</h2>
+
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Curso:</label>
+                    <select id="curso" name="curso">
+                        <option value="ADS">ADS</option>
+                        <option value="Sistemas de Informação">Sistemas de Informação</option>
+                        <option value="Ciência da Computação">Ciência da Computação</option>
+                        <option value="Redes de Computadores">Redes de Computadores</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <fieldset class="campo">
+                    <legend>Turno:</legend>
+
+                    <label class="opcao">
+                        <input type="radio" name="turno" value="Manhã">
+                        Manhã
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="turno" value="Tarde">
+                        Tarde
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="turno" value="Noite">
+                        Noite
+                    </label>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+                </div>
+
+                <div class="campo">
+                    <label class="opcao" for="aceite">
+                        <input type="checkbox" id="aceite" name="aceite">
+                        Confirmo minha participação no workshop.
+                    </label>
+                </div>
+
+                <button type="submit">Realizar inscrição</button>
+            </form>
+        </section>
+
+        <!-- Tabela com os participantes informados na atividade -->
+        <section id="participantes">
+            <h2>Participantes Inscritos</h2>
+
+            <table>
+                <caption>Inscrições - Workshop de Desenvolvimento Web</caption>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Curso</th>
+                        <th>Turno</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ana Souza</td>
+                        <td>ADS</td>
+                        <td>Manhã</td>
+                        <td>Confirmado</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Lima</td>
+                        <td>Sistemas de Informação</td>
+                        <td>Noite</td>
+                        <td>Confirmado</td>
+                    </tr>
+                    <tr>
+                        <td>Mariana Silva</td>
+                        <td>Ciência da Computação</td>
+                        <td>Tarde</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>João Santos</td>
+                        <td>ADS</td>
+                        <td>Noite</td>
+                        <td>Confirmado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Workshop de Desenvolvimento Web</p>
+        <p>2026 - Faculdade</p>
+    </footer>
+
+</body>
+</html>

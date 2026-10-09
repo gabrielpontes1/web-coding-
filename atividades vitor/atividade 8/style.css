@@ -1,0 +1,160 @@
+/* Estilização básica da página */
+
+/* Corpo: define fonte, cor do texto, fundo e altura das linhas. */
+body {
+    font-family: sans-serif;
+    color: #333333;             /* Cor hexadecimal */
+    background-color: #F2F2F2;  /* Cor hexadecimal */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Cabeçalho: cor de fundo, cor do texto e alinhamento. */
+header {
+    background-color: rgb(45, 85, 120); /* Cor usando RGB */
+    color: white;                       /* Cor pelo nome */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos específicos para o título principal, selecionado pelo ID. */
+#titulo-principal {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Menu de navegação. */
+nav {
+    background-color: #DDDDDD;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Links: cor e remoção do sublinhado padrão. */
+a {
+    color: #174A70;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Ao passar o mouse, o link fica sublinhado. */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Área principal e seções para manter o conteúdo organizado. */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* A classe destaque é aplicada aos dados do evento e ao aviso. */
+.destaque {
+    color: blue;
+}
+
+/* Exercício de especificidade: o seletor de ID vence classe e elemento. */
+p {
+    color: black;
+}
+
+.destaque {
+    color: blue;
+}
+
+/* Atenção: o # é necessário para selecionar um ID. */
+#aviso {
+    color: red;
+}
+
+/* Labels destacam os nomes dos campos do formulário. */
+label {
+    font-weight: bold;
+}
+
+form {
+    max-width: 600px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+fieldset.campo {
+    border: 1px solid #BBBBBB;
+    padding: 10px;
+}
+
+.opcao {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.opcao input {
+    width: auto;
+}
+
+/* Botão de envio: o texto aparece em maiúsculas pelo CSS. */
+button {
+    background-color: #2D5578;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tabela: fonte adequada, cabeçalho colorido e texto nas células. */
+table {
+    font-family: sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+th {
+    background-color: #2D5578;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    color: #333333;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+/* Rodapé: fundo, texto, alinhamento e tamanho da fonte. */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+}
