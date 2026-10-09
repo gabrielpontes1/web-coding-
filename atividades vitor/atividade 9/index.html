@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaCorp Academy | Portal de Treinamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <p class="marca-legenda">INOVACORP</p>
+        <h1 id="titulo-principal">InovaCorp Academy</h1>
+        <p>Aprender, evoluir e transformar.</p>
+    </header>
+
+    <nav class="navegacao" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#treinamentos">Treinamentos</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="#participantes">Participantes</a>
+    </nav>
+
+    <main id="inicio">
+        <section class="apresentacao">
+            <p class="etiqueta">PORTAL CORPORATIVO DE APRENDIZAGEM</p>
+            <h2>Desenvolva novas habilidades com a InovaCorp</h2>
+            <p>O InovaCorp Academy reúne treinamentos internos para apoiar o desenvolvimento profissional dos colaboradores nas áreas de tecnologia, segurança, inteligência artificial e gestão.</p>
+        </section>
+
+        <section id="treinamentos">
+            <p class="etiqueta">OPORTUNIDADES DE APRENDIZADO</p>
+            <h2>Treinamentos disponíveis</h2>
+            <p class="texto-secundario">Consulte as informações antes de se inscrever.</p>
+
+            <div class="grade-treinamentos">
+                <article class="cartao-treinamento">
+                    <p class="area area-tecnologia">TECNOLOGIA</p>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Aprenda os fundamentos para criar páginas e interfaces para a web.</p>
+                    <ul>
+                        <li><strong>Carga horária:</strong> 12 horas</li>
+                        <li><strong>Modalidade:</strong> Presencial</li>
+                        <li><strong>Vagas:</strong> 20</li>
+                    </ul>
+                    <p class="situacao situacao-confirmado">Inscrições abertas</p>
+                </article>
+
+                <article class="cartao-treinamento">
+                    <p class="area area-seguranca">SEGURANÇA</p>
+                    <h3>Segurança da Informação</h3>
+                    <p>Conheça boas práticas para proteger dados e informações corporativas.</p>
+                    <ul>
+                        <li><strong>Carga horária:</strong> 8 horas</li>
+                        <li><strong>Modalidade:</strong> Remoto</li>
+                        <li><strong>Vagas:</strong> 15</li>
+                    </ul>
+                    <p class="situacao situacao-confirmado">Inscrições abertas</p>
+                </article>
+
+                <article class="cartao-treinamento">
+                    <p class="area area-ia">INOVAÇÃO</p>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Explore conceitos iniciais de IA e suas aplicações no trabalho.</p>
+                    <ul>
+                        <li><strong>Carga horária:</strong> 10 horas</li>
+                        <li><strong>Modalidade:</strong> Remoto</li>
+                        <li><strong>Vagas:</strong> 0</li>
+                    </ul>
+                    <p class="situacao situacao-espera">Lista de espera</p>
+                </article>
+
+                <article class="cartao-treinamento">
+                    <p class="area area-gestao">GESTÃO</p>
+                    <h3>Gestão de Projetos</h3>
+                    <p>Organize atividades, prazos e recursos para alcançar objetivos.</p>
+                    <ul>
+                        <li><strong>Carga horária:</strong> 16 horas</li>
+                        <li><strong>Modalidade:</strong> Presencial</li>
+                        <li><strong>Vagas:</strong> 8</li>
+                    </ul>
+                    <p class="situacao situacao-pendente">Vagas limitadas</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="inscricao" class="secao-formulario">
+            <p class="etiqueta">FAÇA PARTE</p>
+            <h2>Inscrição em treinamento</h2>
+            <p class="texto-secundario">Preencha seus dados corporativos.</p>
+
+            <form action="#" method="post">
+                <div class="grade-formulario">
+                    <div class="campo">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail corporativo *</label>
+                        <input type="email" id="email" name="email" placeholder="nome@inovacorp.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="matricula">Matrícula *</label>
+                        <input type="text" id="matricula" name="matricula" pattern="[A-Za-z0-9-]{3,15}" title="Informe de 3 a 15 letras, números ou hífens." required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="departamento">Departamento *</label>
+                        <select id="departamento" name="departamento" required>
+                            <option value="">Selecione o departamento</option>
+                            <option>Tecnologia</option>
+                            <option>Gestão</option>
+                            <option>Segurança</option>
+                            <option>Recursos Humanos</option>
+                            <option>Financeiro</option>
+                            <option>Operações</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="treinamento-desejado">Treinamento desejado *</label>
+                        <select id="treinamento-desejado" name="treinamento" required>
+                            <option value="">Selecione um treinamento</option>
+                            <option>Desenvolvimento Web</option>
+                            <option>Segurança da Informação</option>
+                            <option>Inteligência Artificial</option>
+                            <option>Gestão de Projetos</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="campo">
+                        <legend>Preferência de modalidade *</legend>
+                        <label class="opcao"><input type="radio" name="modalidade" value="Presencial" required> Presencial</label>
+                        <label class="opcao"><input type="radio" name="modalidade" value="Remoto"> Remoto</label>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="nivel">Nível de conhecimento *</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">Selecione seu nível</option>
+                            <option>Iniciante</option>
+                            <option>Intermediário</option>
+                            <option>Avançado</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="disponibilidade">Data de disponibilidade *</label>
+                        <input type="date" id="disponibilidade" name="disponibilidade" required>
+                    </div>
+
+                    <div class="campo campo-largo">
+                        <label for="motivacao">Por que deseja realizar este treinamento? *</label>
+                        <textarea id="motivacao" name="motivacao" rows="4" minlength="10" maxlength="500" placeholder="Conte brevemente sua motivação (10 a 500 caracteres)." required></textarea>
+                    </div>
+
+                    <div class="campo campo-largo">
+                        <label class="opcao" for="regras">
+                            <input type="checkbox" id="regras" name="regras" required>
+                            Estou ciente das regras de participação nos treinamentos. *
+                        </label>
+                    </div>
+                </div>
+                <p class="nota-formulario">* Campos obrigatórios.</p>
+                <button type="submit">Enviar inscrição</button>
+            </form>
+        </section>
+
+        <section id="participantes">
+            <p class="etiqueta">ACOMPANHAMENTO</p>
+            <h2>Participantes cadastrados</h2>
+            <p class="texto-secundario">Dados fictícios para demonstração da interface.</p>
+            <div class="aviso-tabela">
+                <strong>Observação:</strong> esta tabela é demonstrativa. O formulário não grava nem atualiza registros, pois esta versão utiliza somente HTML e CSS.
+            </div>
+
+            <div class="tabela-responsiva">
+                <table>
+                    <caption>Inscrições nos treinamentos corporativos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Matrícula</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Treinamento</th>
+                            <th scope="col">Modalidade</th>
+                            <th scope="col">Nível</th>
+                            <th scope="col">Data da inscrição</th>
+                            <th scope="col">Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IC1024</td><td>Ana Souza</td><td>Desenvolvimento Web</td><td>Presencial</td><td>Iniciante</td><td>01/10/2026</td>
+                            <td><span class="estado estado-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>IC1041</td><td>Carlos Lima</td><td>Segurança da Informação</td><td>Remoto</td><td>Intermediário</td><td>02/10/2026</td>
+                            <td><span class="estado estado-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>IC1078</td><td>Mariana Silva</td><td>Inteligência Artificial</td><td>Remoto</td><td>Iniciante</td><td>03/10/2026</td>
+                            <td><span class="estado estado-pendente">Pendente</span></td>
+                        </tr>
+                        <tr>
+                            <td>IC1093</td><td>João Santos</td><td>Gestão de Projetos</td><td>Presencial</td><td>Avançado</td><td>04/10/2026</td>
+                            <td><span class="estado estado-espera">Lista de Espera</span></td>
+                        </tr>
+                        <tr>
+                            <td>IC1120</td><td>Beatriz Costa</td><td>Desenvolvimento Web</td><td>Remoto</td><td>Intermediário</td><td>05/10/2026</td>
+                            <td><span class="estado estado-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>IC1156</td><td>Pedro Alves</td><td>Segurança da Informação</td><td>Presencial</td><td>Iniciante</td><td>06/10/2026</td>
+                            <td><span class="estado estado-pendente">Pendente</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Total de participantes listados</td>
+                            <td>6</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Especificidade: p, .destaque-especificidade e #aviso-especificidade -->
+        <section class="secao-exemplo">
+            <h2>Exemplo de especificidade CSS</h2>
+            <p class="destaque-especificidade" id="aviso-especificidade">
+                Este aviso é estilizado por um seletor de elemento, uma classe e um ID.
+                A regra de ID prevalece neste exemplo.
+            </p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-marca">InovaCorp Academy</p>
+        <p>Portal de Treinamentos Corporativos</p>
+        <p class="rodape-secundario">© 2026 InovaCorp. Protótipo acadêmico.</p>
+    </footer>
+</body>
+</html>
