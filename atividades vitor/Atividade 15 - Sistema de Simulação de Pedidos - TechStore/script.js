@@ -24,7 +24,7 @@ function simular() {
         idade=Number(prompt("digite sua idade"))
     }
 
-    if (idade<=18){
+    if (idade<18){
         console.log("Clientes menores de 18 anos não podem concluir a  compra.")
         return;
     } 
