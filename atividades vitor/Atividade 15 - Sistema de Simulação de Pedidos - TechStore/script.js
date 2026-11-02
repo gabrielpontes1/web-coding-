@@ -24,7 +24,7 @@ function simular() {
         idade=Number(prompt("digite sua idade"))
     }
 
-    if (idade<18){
+    if (idade<=18){
         console.log("Clientes menores de 18 anos não podem concluir a  compra.")
         return;
     } 
@@ -80,13 +80,13 @@ function simular() {
 
     let valor_do_desconto=valor_cliente *desconto/100
     let valor_com_desconto=valor_cliente - valor_do_desconto
-    
+    let valor_frete=frete[cidade].valor
+    let valor_final=valor_com_desconto+valor_frete
 
-    let valor_final=valor_com_desconto+frete[cidade].valor
     if (valor_com_desconto>=1000){
         console.log("valores acima de 1000 tem frete gratis")
         valor_final=valor_com_desconto
-        frete[cidade].valor=0
+        valor_frete=0
     }
     let resumo=` 
         nome:${nome} cidade: ${local}
@@ -94,7 +94,7 @@ function simular() {
         quantidade: ${quantidade}
         subtotal ${valor_cliente}
         desconto ${valor_do_desconto}
-        frete: ${frete[cidade].valor}
+        frete: ${valor_frete}
         valor final: ${valor_final}
         Simulação concluída com sucesso:
     `
