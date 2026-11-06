@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+input[type=text],select{
+  width:20%;
+  max-width: 200px;
+}
+  button{
+    max-width: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+  }

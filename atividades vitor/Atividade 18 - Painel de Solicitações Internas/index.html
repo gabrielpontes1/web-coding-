@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Painel de Solicitações Internas</title>
+</head>
+
+<body>
+  <header>
+    <h1>Painel de Solicitações Internas</h1>
+  </header>
+  <main>
+    <form action="" id="formulario">
+      <label for="nome">nome do solicitante</label>
+      <input type="text" id="nome" name="nome">
+      
+      <label for="setor">setor</label>
+      <input type="text" id="setor" name="setor">
+      
+      <label for="titulo_solicita">título da solicitação</label>
+      <input type="text" id="titulo_solicita" name="titulo_solicita">
+      
+      <label for="catergoria">categoria</label>
+      <select id="categoria" name="categoria"  >
+        <option value="" disable selected>selecione uma categoria</option>
+        <option value="suporte_tecnico">Suporte Técnico</option>
+        <option value="equipamento">equipamento</option>
+
+      </select>
+      
+      <label for="prioridade">prioridade</label>
+      <select name="prioridade" id="prioridade">
+        <option value="" disabled selected>selecione uma prioridade</option>
+        <option value="baixa">baixa</option>
+        <option value="media">media</option>
+        <option value="alta">alta</option>
+      </select>
+      
+      <label for="descricao">descriçao</label>
+      <input type="text" id="descricao" name="descricao">
+      
+      <button type="submit">enviar</button>
+    </form>
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+</html>
